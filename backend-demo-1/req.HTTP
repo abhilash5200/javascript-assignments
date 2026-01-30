@@ -1,0 +1,65 @@
+
+GET http://localhost:3000/users
+
+### Response
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "id":200,
+    "name":"John Doe",
+    "age":18
+}
+
+
+
+###
+PUT http://localhost:3000/users/200
+
+Content-Type: application/json
+{
+    "id":200,
+    "name":"John Doe",
+    "age":18
+}
+###read  a user by id
+GET http://localhost:3000/users/200
+
+###
+
+DELETE http://localhost:3000/users/200
+
+
+###
+GET http://localhost:3000/products
+
+### Response
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "productid": 101,
+    "name": "Laptop",
+    "price": 55000,
+    "brand": "HP"
+
+}
+
+
+
+###
+PUT http://localhost:3000/products/101
+Content-Type: application/json
+
+{
+    "productid": 101,
+    "name": "Laptop Pro",
+    "price": 60000,
+    "brand": "HP"
+}
+
+###
+GET http://localhost:3000/products/101
+
+###
+DELETE http://localhost:3000/products/101
