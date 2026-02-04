@@ -64,4 +64,19 @@ Content-Type: application/json
 DELETE http://localhost:4000/product/delete/697dd1e0be680faad965292f
 
 
+### login user
+POST http://localhost:4000/user/auth
+Content-Type: application/json
+
+{
+    "username": "abhi",
+    "password": "abhi123"
+}
+
+
+###req for protected routes
+GET http://localhost:4000/user/test
+
+###test
+GET http://localhost:4000/user/test
 
